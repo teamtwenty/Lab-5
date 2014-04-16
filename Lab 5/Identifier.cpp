@@ -1,11 +1,12 @@
 #include "Identifier.h"
 
-Identifier:: Identifier()
+Identifier::Identifier()
 {
-  
+    setLeftChild(NULL);
+    setRightChild(NULL);
 }
 
-Identifier:: ~Identifier()
+Identifier::~Identifier()
 {
 
 }

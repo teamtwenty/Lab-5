@@ -8,8 +8,8 @@ class Identifier : public Token
     Identifier *rightChild;
   
   public:
-    Identifier(){}
-    ~Identifier(){}
+    Identifier();
+    ~Identifier();
     Identifier* getRightChild();
     Identifier* getLeftChild();
     void setLeftChild(Identifier *tok);
