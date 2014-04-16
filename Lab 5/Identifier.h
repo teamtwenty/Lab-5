@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Token.h"
 
-Class Identifier : public Token
+class Identifier : public Token
 {
   private:
   
@@ -9,6 +9,7 @@ Class Identifier : public Token
   public:
     Identifier(){}
     ~Identifier(){}
+    
     
     
     

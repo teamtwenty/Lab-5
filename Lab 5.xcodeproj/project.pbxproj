@@ -33,6 +33,7 @@
 		95A1562818FF16C900AA9506 /* Lab 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A1562B18FF16C900AA9506 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		95A1562D18FF16CA00AA9506 /* Lab_5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Lab_5.1; sourceTree = "<group>"; };
+		95F245F618FF33F800CD657C /* Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identifier.h; sourceTree = "<group>"; };
 		95F456D818FF17B600523E62 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		95F456D918FF17B600523E62 /* IdentifierBinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdentifierBinaryTree.cpp; sourceTree = "<group>"; };
 		95F456DA18FF17B600523E62 /* IdentifierBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifierBinaryTree.h; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 				95F456D818FF17B600523E62 /* common.h */,
 				95F456D918FF17B600523E62 /* IdentifierBinaryTree.cpp */,
 				95F456DA18FF17B600523E62 /* IdentifierBinaryTree.h */,
+				95F245F618FF33F800CD657C /* Identifier.h */,
 				95F456DB18FF17B600523E62 /* LineNumberList.cpp */,
 				95F456DC18FF17B600523E62 /* LineNumberList.h */,
 				95F456DD18FF17B600523E62 /* Print.cpp */,

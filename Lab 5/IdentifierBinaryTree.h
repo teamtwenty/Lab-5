@@ -11,10 +11,11 @@
 
 #include <iostream>
 #include "Token.h"
+#include "Identifier.h"
 
 class IdentifierBinaryTree
 {
-    Token *treeRoot;
+    Identifier *treeRoot;
     
     void depthFirstDeleteTree(Identifier *id);
     
@@ -22,7 +23,7 @@ public:
     IdentifierBinaryTree();
     ~IdentifierBinaryTree();
     void setTreeRoot(Identifier *id);
-    Token *getTreeRoot();
+    Identifier *getTreeRoot();
     bool addIdentifier(Identifier *id, int lineNum);
 };
 
