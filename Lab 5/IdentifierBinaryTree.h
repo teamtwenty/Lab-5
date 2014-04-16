@@ -16,14 +16,14 @@ class IdentifierBinaryTree
 {
     Token *treeRoot;
     
-    void depthFirstDeleteTree(Token *tok);
+    void depthFirstDeleteTree(Identifier *id);
     
 public:
     IdentifierBinaryTree();
     ~IdentifierBinaryTree();
-    void setTreeRoot(Token *root);
+    void setTreeRoot(Identifier *id);
     Token *getTreeRoot();
-    bool addIdentifier(Token *tok, int lineNum);
+    bool addIdentifier(Identifier *id, int lineNum);
 };
 
 #endif /* defined(__Lab4__IdentifierBinaryTree__) */
