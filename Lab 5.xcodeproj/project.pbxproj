@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		95A1562C18FF16C900AA9506 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95A1562B18FF16C900AA9506 /* main.cpp */; };
 		95A1562E18FF16CA00AA9506 /* Lab_5.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95A1562D18FF16CA00AA9506 /* Lab_5.1 */; };
+		95F245F818FF36F500CD657C /* Identifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F245F718FF36F500CD657C /* Identifier.cpp */; };
 		95F456E318FF17B600523E62 /* IdentifierBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F456D918FF17B600523E62 /* IdentifierBinaryTree.cpp */; };
 		95F456E418FF17B600523E62 /* LineNumberList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F456DB18FF17B600523E62 /* LineNumberList.cpp */; };
 		95F456E518FF17B600523E62 /* Print.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F456DD18FF17B600523E62 /* Print.cpp */; };
@@ -34,6 +35,7 @@
 		95A1562B18FF16C900AA9506 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		95A1562D18FF16CA00AA9506 /* Lab_5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Lab_5.1; sourceTree = "<group>"; };
 		95F245F618FF33F800CD657C /* Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identifier.h; sourceTree = "<group>"; };
+		95F245F718FF36F500CD657C /* Identifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Identifier.cpp; sourceTree = "<group>"; };
 		95F456D818FF17B600523E62 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		95F456D918FF17B600523E62 /* IdentifierBinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdentifierBinaryTree.cpp; sourceTree = "<group>"; };
 		95F456DA18FF17B600523E62 /* IdentifierBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifierBinaryTree.h; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				95F456D918FF17B600523E62 /* IdentifierBinaryTree.cpp */,
 				95F456DA18FF17B600523E62 /* IdentifierBinaryTree.h */,
 				95F245F618FF33F800CD657C /* Identifier.h */,
+				95F245F718FF36F500CD657C /* Identifier.cpp */,
 				95F456DB18FF17B600523E62 /* LineNumberList.cpp */,
 				95F456DC18FF17B600523E62 /* LineNumberList.h */,
 				95F456DD18FF17B600523E62 /* Print.cpp */,
@@ -150,6 +153,7 @@
 				95F456E318FF17B600523E62 /* IdentifierBinaryTree.cpp in Sources */,
 				95F456E418FF17B600523E62 /* LineNumberList.cpp in Sources */,
 				95F456E718FF17B600523E62 /* Token.cpp in Sources */,
+				95F245F818FF36F500CD657C /* Identifier.cpp in Sources */,
 				95F456E518FF17B600523E62 /* Print.cpp in Sources */,
 				95F456E618FF17B600523E62 /* Scanner.cpp in Sources */,
 			);
