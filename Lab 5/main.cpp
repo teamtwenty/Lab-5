@@ -18,7 +18,7 @@ void add_token_to_list(Token *list, Token *new_token);
 
 int main(int argc, const char * argv[])
 {
-    Token *token = NULL;
+    Token *token = new Identifier();
     char source_name[MAX_FILE_NAME_LENGTH];
     char date[DATE_STRING_LENGTH];
     FILE *source_file = init_lister(argv[1], source_name, date);
@@ -32,7 +32,7 @@ int main(int argc, const char * argv[])
         print.printToken(token);
         if (token->getCode() == IDENTIFIER)
         {
-            tree.addIdentifier(token, scanner.getLineNumber());
+            tree.addIdentifier((Identifier*)token, scanner.getLineNumber());
         }
         else if (token->getCode() != PERIOD && token->getCode() != END_OF_FILE)
         {
