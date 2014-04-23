@@ -18,7 +18,7 @@ private:
     
 public:
     String();
-
+    virtual void print();
 };
 
 #endif /* defined(__Lab_5__String__) */

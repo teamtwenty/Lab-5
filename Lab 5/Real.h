@@ -10,7 +10,7 @@
 #define __Lab_5__Real__
 
 #include <iostream>
-#include "Literal.h"
+//#include "Literal.h"
 
 
 class Real : public Literal<double>
@@ -19,5 +19,6 @@ private:
     
 public:
     Real();
+    virtual void print();
 };
 #endif /* defined(__Lab_5__Real__) */

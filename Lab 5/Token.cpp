@@ -26,10 +26,6 @@ Token::~Token()
         delete root;
         root = tmp;
     }
-    if (this->getType() == STRING_LIT)
-    {
-        free(this->literal.stringLiteral);
-    }
 }
 void Token::setCode(TokenCode newCode)
 {
@@ -63,7 +59,7 @@ float Token::getRealLiteral()
 {
     return this->literal.real;
 }*/
-void Token::setLiteral(string newString)
+/*void Token::setLiteral(string newString)
 {
     this->literal.stringLiteral = (char*)malloc(sizeof(char) * newString.length() + 1);
     strcpy(this->literal.stringLiteral, newString.c_str());
@@ -71,7 +67,7 @@ void Token::setLiteral(string newString)
 string Token::getStringLiteral()
 {
     return string(this->literal.stringLiteral);
-}
+}*/
 void Token::setTokenString(string s)
 {
     this->tokenString = s;

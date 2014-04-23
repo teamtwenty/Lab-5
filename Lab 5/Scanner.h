@@ -35,12 +35,13 @@ private:
     char source_line[MAX_SOURCE_LINE_LENGTH];
     char *line_ptr = NULL;
     int line_number;
+    Token *newToken;
     
     bool getSourceLine(char source_buffer[]);
     char getChar(char source_buffer[]);
     void skipBlanks(char source_buffer[]);
     void skipComment(char source_buffer[]);
-    void getWord(char *str, char *token_ptr, Token *tok);
+    void getWord(char *str, char *token_ptr);
     void getNumber(char *str, char *token_ptr, Token *tok);
     void getString(char *str, char *token_ptr, Token *tok);
     void getSpecial(char *str, char *token_ptr, Token *tok);

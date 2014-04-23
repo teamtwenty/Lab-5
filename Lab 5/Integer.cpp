@@ -9,10 +9,7 @@
 #include "Integer.h"
 #include "Literal.h"
 
-class Integer : public Literal<int>
+Integer::Integer() : Literal<int>(0)
 {
-    Integer(): Literal<int>(0)
-    {
-        
-    }
-};
+
+}

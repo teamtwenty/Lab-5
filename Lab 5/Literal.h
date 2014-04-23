@@ -12,19 +12,17 @@
 #include <iostream>
 #include "Token.h"
 
-template <typename NewLiteral>
-
-
+template <typename NewType>
 class Literal : public Token
 {
 private:
-    NewLiteral newLit;
+    NewType newLit;
     
 public:
-	Literal(NewLiteral lit){ setLiteral(lit); }
+	Literal(NewType lit){ setLiteral(lit); }
 	~Literal(){};
-	void setLiteral(NewLiteral lit){ newLit = lit;}
-	NewLiteral getLiteral(){ return newLit; };
+	void setLiteral(NewType lit){ newLit = lit;}
+	NewType getLiteral(){ return newLit; };
     virtual void print() = 0;
 
     
