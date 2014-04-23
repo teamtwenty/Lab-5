@@ -7,6 +7,8 @@
 
 #include "Scanner.h"
 #include "Print.h"
+#include "String.h"
+
 
 typedef struct
 {
@@ -84,9 +86,9 @@ Token* Scanner::getToken()
     char ch = '\0'; //This can be the current character you are examining during scanning.
     char token_string[MAX_TOKEN_STRING_LENGTH] = {'\0'}; //Store your token here as you build it.
     char *token_ptr = token_string; //write some code to point this to the beginning of token_string
-    Token *new_token = new Token();
+    Token *new_token;
     
-    new_token->setType(NO_TYPE);
+    //new_token->setType(NO_TYPE);
     //1.  Skip past all of the blanks
     if (line_ptr == NULL)
     {
@@ -105,6 +107,7 @@ Token* Scanner::getToken()
             getNumber(token_string, token_ptr, new_token);
             break;
         case QUOTE:
+            new_token = new String();
             getString(token_string, token_ptr, new_token);
             break;
         case EOF_CODE:

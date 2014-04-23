@@ -11,6 +11,9 @@
 #include <iostream>
 #include "common.h"
 #include "LineNumberList.h"
+#include "String.h"
+
+
 
 using namespace std;
 
@@ -41,14 +44,14 @@ public:
     ~Token();
     void setCode(TokenCode newCode);
     TokenCode getCode();
-    void setType(LiteralType newType);
-    LiteralType getType();
-    void setLiteral(int newInteger);
-    int getIntLiteral();
-    void setLiteral(float newReal);
-    float getRealLiteral();
-    void setLiteral(string newString);
-    string getStringLiteral();
+  //  void setType(LiteralType newType);
+  //  LiteralType getType();
+  //  void setLiteral(int newInteger);
+   // int getIntLiteral();
+  //  void setLiteral(float newReal);
+   // float getRealLiteral();
+   // void setLiteral(string newString);
+  //  string getStringLiteral();
     void setTokenString(string s);
     string getTokenString();
     void setLeftChild(Token *tok);
@@ -57,6 +60,12 @@ public:
     Token *getRightChild();
     void addToLineNumberList(LineNumberList *listItem);
     LineNumberList *getLineNumberList();
+    
+    virtual void print();
+    
+    //get rid of literals and make templates
+    
+    
 };
 
 #endif /* defined(__Lab4__Token__) */

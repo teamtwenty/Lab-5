@@ -39,7 +39,7 @@ TokenCode Token::getCode()
 {
     return this->code;
 }
-void Token::setType(LiteralType newType)
+/*void Token::setType(LiteralType newType)
 {
     this->type = newType;
 }
@@ -62,7 +62,7 @@ void Token::setLiteral(float newReal)
 float Token::getRealLiteral()
 {
     return this->literal.real;
-}
+}*/
 void Token::setLiteral(string newString)
 {
     this->literal.stringLiteral = (char*)malloc(sizeof(char) * newString.length() + 1);

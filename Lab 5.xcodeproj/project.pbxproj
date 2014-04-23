@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		95A1562C18FF16C900AA9506 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95A1562B18FF16C900AA9506 /* main.cpp */; };
 		95A1562E18FF16CA00AA9506 /* Lab_5.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95A1562D18FF16CA00AA9506 /* Lab_5.1 */; };
+		95EB8C111907176F00A976EF /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8C0F1907176F00A976EF /* String.cpp */; };
+		95EB8C1419071A4D00A976EF /* Real.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8C1219071A4D00A976EF /* Real.cpp */; };
+		95EB8C1719071AD100A976EF /* Integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8C1519071AD100A976EF /* Integer.cpp */; };
 		95F245F818FF36F500CD657C /* Identifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F245F718FF36F500CD657C /* Identifier.cpp */; };
 		95F456E318FF17B600523E62 /* IdentifierBinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F456D918FF17B600523E62 /* IdentifierBinaryTree.cpp */; };
 		95F456E418FF17B600523E62 /* LineNumberList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F456DB18FF17B600523E62 /* LineNumberList.cpp */; };
@@ -34,6 +37,13 @@
 		95A1562818FF16C900AA9506 /* Lab 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A1562B18FF16C900AA9506 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		95A1562D18FF16CA00AA9506 /* Lab_5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Lab_5.1; sourceTree = "<group>"; };
+		95EB8C0D190714F500A976EF /* Literal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Literal.h; sourceTree = "<group>"; };
+		95EB8C0F1907176F00A976EF /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = String.cpp; sourceTree = "<group>"; };
+		95EB8C101907176F00A976EF /* String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
+		95EB8C1219071A4D00A976EF /* Real.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Real.cpp; sourceTree = "<group>"; };
+		95EB8C1319071A4D00A976EF /* Real.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Real.h; sourceTree = "<group>"; };
+		95EB8C1519071AD100A976EF /* Integer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Integer.cpp; sourceTree = "<group>"; };
+		95EB8C1619071AD100A976EF /* Integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integer.h; sourceTree = "<group>"; };
 		95F245F618FF33F800CD657C /* Identifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Identifier.h; sourceTree = "<group>"; };
 		95F245F718FF36F500CD657C /* Identifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Identifier.cpp; sourceTree = "<group>"; };
 		95F456D818FF17B600523E62 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -93,6 +103,13 @@
 				95F456E018FF17B600523E62 /* Scanner.h */,
 				95F456E118FF17B600523E62 /* Token.cpp */,
 				95F456E218FF17B600523E62 /* Token.h */,
+				95EB8C0D190714F500A976EF /* Literal.h */,
+				95EB8C0F1907176F00A976EF /* String.cpp */,
+				95EB8C101907176F00A976EF /* String.h */,
+				95EB8C1219071A4D00A976EF /* Real.cpp */,
+				95EB8C1319071A4D00A976EF /* Real.h */,
+				95EB8C1519071AD100A976EF /* Integer.cpp */,
+				95EB8C1619071AD100A976EF /* Integer.h */,
 				95A1562D18FF16CA00AA9506 /* Lab_5.1 */,
 			);
 			path = "Lab 5";
@@ -149,12 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EB8C1419071A4D00A976EF /* Real.cpp in Sources */,
 				95A1562C18FF16C900AA9506 /* main.cpp in Sources */,
+				95EB8C1719071AD100A976EF /* Integer.cpp in Sources */,
 				95F456E318FF17B600523E62 /* IdentifierBinaryTree.cpp in Sources */,
 				95F456E418FF17B600523E62 /* LineNumberList.cpp in Sources */,
 				95F456E718FF17B600523E62 /* Token.cpp in Sources */,
 				95F245F818FF36F500CD657C /* Identifier.cpp in Sources */,
 				95F456E518FF17B600523E62 /* Print.cpp in Sources */,
+				95EB8C111907176F00A976EF /* String.cpp in Sources */,
 				95F456E618FF17B600523E62 /* Scanner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
