@@ -7,9 +7,12 @@
 //
 
 #include "String.h"
-#include "Literal.h"
 
 String::String(): Literal<string>("")
 {
     
+}
+void String::print()
+{
+    cout << "    >> <STRING>" << this->getLiteral() << "\n";
 }

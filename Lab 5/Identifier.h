@@ -1,5 +1,11 @@
+
+#ifndef __Lab_5__Identifier__
+#define __Lab_5__Identifier__
+
 #include <iostream>
-//#include "Token.h"
+#include "Token.h"
+
+using namespace std;
 
 class Identifier : public Token
 {
@@ -17,3 +23,5 @@ class Identifier : public Token
     
     
 };
+
+#endif

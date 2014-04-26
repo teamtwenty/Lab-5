@@ -7,9 +7,20 @@
 //
 
 #include "Integer.h"
-#include "Literal.h"
+
 
 Integer::Integer() : Literal<int>(0)
 {
 
 }
+void Integer::print()
+{
+   cout << "  >> <NUMBER>" << this->getLiteral() << " (integer)\n";
+}
+
+
+//what are you trying to use sprintf for?
+//cant you just use regular printf?
+//printf uses a different library form iostream
+//iostream only has cin and cout
+

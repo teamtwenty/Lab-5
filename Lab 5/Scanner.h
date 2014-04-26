@@ -9,8 +9,12 @@
 #define Lab4_Scanner_h
 
 #include "common.h"
-#include "Token.h"
+//#include "Token.h"
 #include "Print.h"
+//#include "String.h"
+#include "Identifier.h"
+//#include "Integer.h"
+//#include "Real.h"
 
 #define CHAR_TABLE_SIZE 256
 
@@ -36,14 +40,15 @@ private:
     char *line_ptr = NULL;
     int line_number;
     Token *newToken;
+    //bool type;
     
     bool getSourceLine(char source_buffer[]);
     char getChar(char source_buffer[]);
     void skipBlanks(char source_buffer[]);
     void skipComment(char source_buffer[]);
     void getWord(char *str, char *token_ptr);
-    void getNumber(char *str, char *token_ptr, Token *tok);
-    void getString(char *str, char *token_ptr, Token *tok);
+    void getNumber(char *str, char *token_ptr);
+    void getString(char *str, char *token_ptr);
     void getSpecial(char *str, char *token_ptr, Token *tok);
     void downshiftWord(char word[]);
     bool isReservedWord(char *str, Token *tok);

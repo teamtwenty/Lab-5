@@ -11,6 +11,10 @@
 #include <iostream>
 #include "common.h"
 #include "Token.h"
+#include "Identifier.h"
+#include "Integer.h"
+#include "Real.h"
+#include "String.h"
 
 using namespace std;
 

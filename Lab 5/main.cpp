@@ -15,6 +15,7 @@
 FILE *init_lister(const char *name, char source_file_name[], char dte[]);
 void quit_scanner(FILE *src_file, Token *list);
 void add_token_to_list(Token *list, Token *new_token);
+bool type;
 
 int main(int argc, const char * argv[])
 {

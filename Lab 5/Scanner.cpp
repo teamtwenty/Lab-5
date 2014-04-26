@@ -7,10 +7,7 @@
 
 #include "Scanner.h"
 #include "Print.h"
-#include "String.h"
-#include "Identifier.h"
-#include "Integer.h"
-#include "Real.h"
+
 
 
 typedef struct
@@ -89,7 +86,7 @@ Token* Scanner::getToken()
     char ch = '\0'; //This can be the current character you are examining during scanning.
     char token_string[MAX_TOKEN_STRING_LENGTH] = {'\0'}; //Store your token here as you build it.
     char *token_ptr = token_string; //write some code to point this to the beginning of token_string
-    
+
     //new_token->setType(NO_TYPE);
     //1.  Skip past all of the blanks
     if (line_ptr == NULL)
@@ -115,11 +112,11 @@ Token* Scanner::getToken()
             break;
         case EOF_CODE:
            // new_token = new Token();
-            new_token->setCode(END_OF_FILE);
+            newToken->setCode(END_OF_FILE);
             break;
         default:
-            new_token = new Token();
-            getSpecial(token_string, token_ptr);
+            newToken = new Token();
+            getSpecial(token_string, token_ptr, newToken);
             break;
     }
     
@@ -220,7 +217,7 @@ void Scanner::getNumber(char *str, char *token_ptr)
      Write some code to Extract the number and convert it to a literal number.
      */
     char ch = *line_ptr;
-    bool int_type = true;
+    numberType = true;
     
     do
     {
@@ -236,12 +233,12 @@ void Scanner::getNumber(char *str, char *token_ptr)
         if (ch == '.')
         {
             //We have a dotdot, back up ptr and our number is an int.
-            int_type = true;
+            numberType = true;
             --line_ptr;
         }
         else
         {
-            int_type = false;
+            numberType = false;
             *(token_ptr++) = '.';
             //We have a floating point number
             do
@@ -254,7 +251,7 @@ void Scanner::getNumber(char *str, char *token_ptr)
     }
     if (ch == 'e' || ch == 'E')
     {
-        int_type = false;
+        numberType = false;
         *(token_ptr++) = ch;
         ch = *(++line_ptr);
         if (ch == '+' || ch == '-')
@@ -271,7 +268,7 @@ void Scanner::getNumber(char *str, char *token_ptr)
     }
     *token_ptr = '\0';
     newToken->setCode(NUMBER);
-    if (int_type)
+    if (numberType)
     {
         //tok->setType(INTEGER_LIT);
         Integer *newInt = new Integer();
@@ -280,13 +277,13 @@ void Scanner::getNumber(char *str, char *token_ptr)
     }
     else
     {
-        //tok->setType(REAL_LIT);
+        //newToken->setCode(Real);
         Real *newReal = new Real();
         newReal->setLiteral((float)atof(str));
         newToken = newReal;
     }
 }
-void Scanner::getString(char *str, char *token_ptr, Token *tok)
+void Scanner::getString(char *str, char *token_ptr)
 {
     /*
      Write some code to Extract the string
@@ -300,10 +297,12 @@ void Scanner::getString(char *str, char *token_ptr, Token *tok)
     }
     *token_ptr++ = *line_ptr++;
     *token_ptr = '\0';
-    tok->setCode(STRING);
-    tok->setType(STRING_LIT);
+    newToken->setCode(STRING);
+  //  newToken->setType(STRING_LIT);
     string test(str);
-    tok->setLiteral(test);
+    String *newString = new String();
+    newString->setLiteral(test);
+    newToken = newString;
 }
 void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)
 {

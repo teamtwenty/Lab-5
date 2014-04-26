@@ -20,9 +20,9 @@ private:
     
 public:
 	Literal(NewType lit){ setLiteral(lit); }
-	~Literal(){};
+	~Literal(){}
 	void setLiteral(NewType lit){ newLit = lit;}
-	NewType getLiteral(){ return newLit; };
+	NewType getLiteral(){ return newLit; }
     virtual void print() = 0;
 
     

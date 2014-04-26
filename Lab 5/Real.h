@@ -10,7 +10,7 @@
 #define __Lab_5__Real__
 
 #include <iostream>
-//#include "Literal.h"
+#include "Literal.h"
 
 
 class Real : public Literal<double>

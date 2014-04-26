@@ -8,7 +8,6 @@
 
 #include "IdentifierBinaryTree.h"
 #include "LineNumberList.h"
-#include "Identifier.h"
 
 using namespace std;
 
