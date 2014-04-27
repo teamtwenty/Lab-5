@@ -8,7 +8,7 @@
 #include "Scanner.h"
 #include "Print.h"
 
-
+extern bool numberType;
 
 typedef struct
 {
@@ -60,6 +60,7 @@ Scanner::Scanner(FILE *source_file, char source_name[], char date[], Print print
     
     line_number = 0;
     source_line[0] = '\0';
+    newToken = NULL;
 }
 Scanner::~Scanner()
 {
@@ -86,7 +87,8 @@ Token* Scanner::getToken()
     char ch = '\0'; //This can be the current character you are examining during scanning.
     char token_string[MAX_TOKEN_STRING_LENGTH] = {'\0'}; //Store your token here as you build it.
     char *token_ptr = token_string; //write some code to point this to the beginning of token_string
-
+    newToken = new Token();
+    
     //new_token->setType(NO_TYPE);
     //1.  Skip past all of the blanks
     if (line_ptr == NULL)
@@ -100,7 +102,6 @@ Token* Scanner::getToken()
     switch (char_table[ch])
     {//3.  Call the approxpriate function to deal with the cases in 2.
         case LETTER:
-            
             getWord(token_string, token_ptr);
             break;
         case DIGIT:
@@ -115,7 +116,7 @@ Token* Scanner::getToken()
             newToken->setCode(END_OF_FILE);
             break;
         default:
-            newToken = new Token();
+            //newToken = new Token();
             getSpecial(token_string, token_ptr, newToken);
             break;
     }
@@ -182,6 +183,8 @@ void Scanner::skipComment(char source_buffer[])
 }
 void Scanner::getWord(char *str, char *token_ptr)
 {
+    
+    //newToken = new Token();
     /*
      Write some code to Extract the word
      */
@@ -203,13 +206,14 @@ void Scanner::getWord(char *str, char *token_ptr)
     if (!isReservedWord(str, newToken))
     {
         //set token to identifier
-        //newToken->setCode(IDENTIFIER);
         newToken = new Identifier();
+
+        newToken->setCode(IDENTIFIER);
+//      newToken->setTokenString(string(str));
+
     }
-    else
-    {
+    
         newToken->setTokenString(string(str));
-    }
 }
 void Scanner::getNumber(char *str, char *token_ptr)
 {

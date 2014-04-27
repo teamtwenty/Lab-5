@@ -7,7 +7,7 @@
 
 #include "Print.h"
 
-
+extern bool numberType;
 
 const char* const SYMBOL_STRINGS[] =
 {
@@ -67,17 +67,17 @@ void Print::printToken(Token *token)
 {
     char line[MAX_SOURCE_LINE_LENGTH + 32];
     const char *symbol_string = SYMBOL_STRINGS[token->getCode()];
-    //token = new Integer();
-    //Real *newReal = new Real();
-    //String *newString = new String();
+
     
     
     switch (token->getCode())
     {
         case NUMBER:
-            if (numberType)
+            if (true)
             {
-//                sprintf(line, "    >> %-16s %d (integer)\n", symbol_string, token->getIntLiteral());
+                
+                //token = newInt;
+               // sprintf(line, "    >> %-16s %d (integer)\n", symbol_string, token->getLiteral());
                 token = new Integer();
                 token->print();
 
@@ -108,7 +108,7 @@ int Print::getLineCount()
 {
     return this->lineCount;
 }
-void Print::printTreeRecursive(Token *identifier)
+void Print::printTreeRecursive(Identifier *identifier)
 {
     char line[MAX_SOURCE_LINE_LENGTH + 32];
     
@@ -131,7 +131,7 @@ void Print::printTreeRecursive(Token *identifier)
         printTreeRecursive(identifier->getRightChild());
     }
 }
-void Print::printTree(Token *identifier)
+void Print::printTree(Identifier *identifier)
 {
     cout << "\n Cross Reference Information\n";
     cout << " Identifier \t\tLine Numbers\n";

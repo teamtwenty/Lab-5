@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "95A1562718FF16C900AA9506"
-               BuildableName = "Lab 5"
-               BlueprintName = "Lab 5"
-               ReferencedContainer = "container:Lab 5.xcodeproj">
+               BlueprintIdentifier = "950186E0190C569D000D54B9"
+               BuildableName = "Lab-5"
+               BlueprintName = "Lab-5"
+               ReferencedContainer = "container:Lab-5.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95A1562718FF16C900AA9506"
-            BuildableName = "Lab 5"
-            BlueprintName = "Lab 5"
-            ReferencedContainer = "container:Lab 5.xcodeproj">
+            BlueprintIdentifier = "950186E0190C569D000D54B9"
+            BuildableName = "Lab-5"
+            BlueprintName = "Lab-5"
+            ReferencedContainer = "container:Lab-5.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,12 +51,18 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95A1562718FF16C900AA9506"
-            BuildableName = "Lab 5"
-            BlueprintName = "Lab 5"
-            ReferencedContainer = "container:Lab 5.xcodeproj">
+            BlueprintIdentifier = "950186E0190C569D000D54B9"
+            BuildableName = "Lab-5"
+            BlueprintName = "Lab-5"
+            ReferencedContainer = "container:Lab-5.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "/Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -69,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "95A1562718FF16C900AA9506"
-            BuildableName = "Lab 5"
-            BlueprintName = "Lab 5"
-            ReferencedContainer = "container:Lab 5.xcodeproj">
+            BlueprintIdentifier = "950186E0190C569D000D54B9"
+            BuildableName = "Lab-5"
+            BlueprintName = "Lab-5"
+            ReferencedContainer = "container:Lab-5.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

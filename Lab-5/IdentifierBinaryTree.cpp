@@ -60,7 +60,7 @@ bool IdentifierBinaryTree::addIdentifier(Identifier *tok, int lineNum)
     else
     {
         string tokenName = tok->getTokenString();
-        Token *parentNode = getTreeRoot();
+        Identifier *parentNode = getTreeRoot();
         string treeNodeName;
         int stringComparison;
         
