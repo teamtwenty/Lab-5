@@ -116,5 +116,5 @@ LineNumberList *Token::getLineNumberList()
 }
 void Token::print()
 {
-    
+
 }

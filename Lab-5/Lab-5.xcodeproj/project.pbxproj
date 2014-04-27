@@ -59,6 +59,7 @@
 		95018700190C56CA000D54B9 /* String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = String.h; sourceTree = "<group>"; };
 		95018701190C56CA000D54B9 /* Token.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Token.cpp; sourceTree = "<group>"; };
 		95018702190C56CA000D54B9 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		95B7D813190CDEB200282659 /* Output */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Output; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 				950186F7190C56CA000D54B9 /* main.cpp */,
 				950186F8190C56CA000D54B9 /* NEWTON.PAS */,
 				950186F9190C56CA000D54B9 /* Print.cpp */,
+				95B7D813190CDEB200282659 /* Output */,
 				950186FA190C56CA000D54B9 /* Print.h */,
 				950186FB190C56CA000D54B9 /* Real.cpp */,
 				950186FC190C56CA000D54B9 /* Real.h */,
@@ -289,6 +291,7 @@
 				950186EC190C569D000D54B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
