@@ -271,13 +271,15 @@ void Scanner::getNumber(char *str, char *token_ptr)
         while (char_table[ch] == DIGIT);
     }
     *token_ptr = '\0';
-    newToken->setCode(NUMBER);
+    //newToken->setCode(NUMBER);
     if (numberType)
     {
+
         //tok->setType(INTEGER_LIT);
         Integer *newInt = new Integer();
         newInt->setLiteral((int)atoi(str));
         newToken = newInt;
+
     }
     else
     {
@@ -286,6 +288,8 @@ void Scanner::getNumber(char *str, char *token_ptr)
         newReal->setLiteral((float)atof(str));
         newToken = newReal;
     }
+    newToken->setCode(NUMBER);
+
 }
 void Scanner::getString(char *str, char *token_ptr)
 {
@@ -301,12 +305,13 @@ void Scanner::getString(char *str, char *token_ptr)
     }
     *token_ptr++ = *line_ptr++;
     *token_ptr = '\0';
-    newToken->setCode(STRING);
+  //  newToken->setCode(STRING);
   //  newToken->setType(STRING_LIT);
     string test(str);
     String *newString = new String();
     newString->setLiteral(test);
     newToken = newString;
+    newToken->setCode(STRING);
 }
 void Scanner::getSpecial(char *str, char *token_ptr, Token *tok)
 {
