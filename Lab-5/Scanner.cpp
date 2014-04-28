@@ -279,6 +279,12 @@ void Scanner::getNumber(char *str, char *token_ptr)
         Integer *newInt = new Integer();
         newInt->setLiteral((int)atoi(str));
         newToken = newInt;
+        Literal<Integer>((int)atoi(str));
+        
+        
+        //newInt = dynamic_cast<Integer*>(newToken);
+        //newToken = newInt;
+        //newToken = new Integer();
 
     }
     else
@@ -310,6 +316,10 @@ void Scanner::getString(char *str, char *token_ptr)
     string test(str);
     String *newString = new String();
     newString->setLiteral(test);
+    
+    
+    
+    
     newToken = newString;
     newToken->setCode(STRING);
 }

@@ -19,7 +19,7 @@ private:
     NewType newLit;
     
 public:
-	Literal(NewType lit){ setLiteral(lit); }
+	Literal(NewType lit){ }
 	~Literal(){}
 	void setLiteral(NewType lit){ newLit = lit;}
 	NewType getLiteral(){ return newLit; }
