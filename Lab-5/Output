@@ -1,8 +1,8 @@
-Page    1  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Sat Apr 26 23:42:52 2014
+Page    1  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Mon Apr 28 13:52:05 2014
 
 
    1: PROGRAM newton (input, output);
-Page    1  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Sat Apr 26 23:42:52 2014
+Page    1  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Mon Apr 28 13:52:05 2014
 
 
     >> PROGRAM          program
@@ -19,8 +19,8 @@
    4:     epsilon = 1e-6;
     >> <IDENTIFIER>     epsilon
     >> =                =
-    >> <no token>       
-    >> ;                ;
+   >> NUMBER>1e-06 (real)
+    >> =    >> ;                ;
    5: 
    6: VAR
     >> VAR              var
@@ -44,8 +44,8 @@
   12: 	write('Enter new number (0 to quit): ');
     >> <IDENTIFIER>     write
     >> (                (
-    >> <no token>       
-    >> )                )
+    >> <STRING>'Enter new number (0 to quit): '
+    >> (    >> )                )
     >> ;                ;
   13: 	read(number);
     >> <IDENTIFIER>     read
@@ -58,26 +58,26 @@
     >> IF               if
     >> <IDENTIFIER>     number
     >> =                =
-    >> <no token>       
-    >> THEN             then
+    >> <NUMBER> 	0 (integer)
+    >> =    >> THEN             then
     >> BEGIN            begin
   16: 	    writeln(number:12:6, 0.0:12:6);
     >> <IDENTIFIER>     writeln
     >> (                (
     >> <IDENTIFIER>     number
     >> :                :
-    >> <no token>       
-    >> :                :
-    >> <no token>       
-    >> ,                ,
-Page    2  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Sat Apr 26 23:42:52 2014
+    >> <NUMBER> 	12 (integer)
+    >> :    >> :                :
+    >> <NUMBER> 	6 (integer)
+    >> :    >> ,                ,
+   >> NUMBER>0 (real)
+Page    2  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Mon Apr 28 13:52:05 2014
 
 
-    >> <no token>       
-    >> <no token>       
-    >> :                :
-    >> <no token>       
-    >> )                )
+    >> ,    >> <NUMBER> 	12 (integer)
+    >> ,    >> :                :
+    >> <NUMBER> 	6 (integer)
+    >> :    >> )                )
     >> ;                ;
   17: 	END
     >> END              end
@@ -86,14 +86,14 @@
     >> IF               if
     >> <IDENTIFIER>     number
     >> <                <
-    >> <no token>       
-    >> THEN             then
+    >> <NUMBER> 	0 (integer)
+    >> <    >> THEN             then
     >> BEGIN            begin
   19: 	    writeln('*** ERROR:  number < 0');
     >> <IDENTIFIER>     writeln
     >> (                (
-    >> <no token>       
-    >> )                )
+    >> <STRING>'*** ERROR:  number < 0'
+    >> (    >> )                )
     >> ;                ;
   20: 	END
     >> END              end
@@ -113,16 +113,16 @@
     >> (                (
     >> <IDENTIFIER>     number
     >> :                :
-    >> <no token>       
-    >> :                :
-    >> <no token>       
-    >> ,                ,
+    >> <NUMBER> 	12 (integer)
+    >> :    >> :                :
+    >> <NUMBER> 	6 (integer)
+    >> :    >> ,                ,
     >> <IDENTIFIER>     sqroot
     >> :                :
-    >> <no token>       
-    >> :                :
-    >> <no token>       
-    >> )                )
+    >> <NUMBER> 	12 (integer)
+    >> :    >> :                :
+    >> <NUMBER> 	6 (integer)
+    >> :    >> )                )
     >> ;                ;
   24: 	    writeln;
     >> <IDENTIFIER>     writeln
@@ -131,10 +131,10 @@
   26: 	    root := 1;
     >> <IDENTIFIER>     root
     >> :=               :=
-    >> <no token>       
-    >> ;                ;
+    >> <NUMBER> 	1 (integer)
+    >> :    >> ;                ;
   27: 	    REPEAT
-Page    3  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Sat Apr 26 23:42:52 2014
+Page    3  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Mon Apr 28 13:52:05 2014
 
 
     >> REPEAT           repeat
@@ -149,20 +149,20 @@
     >> <IDENTIFIER>     root
     >> )                )
     >> /                /
-    >> <no token>       
-    >> ;                ;
+    >> <NUMBER> 	2 (integer)
+    >> /    >> ;                ;
   29: 		writeln(root:24:6,
     >> <IDENTIFIER>     writeln
     >> (                (
     >> <IDENTIFIER>     root
     >> :                :
-    >> <no token>       
-    >> :                :
-    >> <no token>       
-    >> ,                ,
+    >> <NUMBER> 	24 (integer)
+    >> :    >> :                :
+    >> <NUMBER> 	6 (integer)
+    >> :    >> ,                ,
   30: 			100*abs(root - sqroot)/sqroot:12:2,
-    >> <no token>       
-    >> *                *
+    >> <NUMBER> 	100 (integer)
+    >> ,    >> *                *
     >> <IDENTIFIER>     abs
     >> (                (
     >> <IDENTIFIER>     root
@@ -172,13 +172,13 @@
     >> /                /
     >> <IDENTIFIER>     sqroot
     >> :                :
-    >> <no token>       
-    >> :                :
-    >> <no token>       
-    >> ,                ,
+    >> <NUMBER> 	12 (integer)
+    >> :    >> :                :
+    >> <NUMBER> 	2 (integer)
+    >> :    >> ,                ,
   31: 			'%')
-    >> <no token>       
-    >> )                )
+    >> <STRING>'%'
+    >> ,    >> )                )
   32: 	    UNTIL abs(number/sqr(root) - 1) < epsilon;
     >> UNTIL            until
     >> <IDENTIFIER>     abs
@@ -190,9 +190,9 @@
     >> <IDENTIFIER>     root
     >> )                )
     >> -                -
-    >> <no token>       
-    >> )                )
-Page    4  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Sat Apr 26 23:42:52 2014
+    >> <NUMBER> 	1 (integer)
+    >> -    >> )                )
+Page    4  /Users/maxxrodriguez/Lab-5/Lab-5/NEWTON.PAS  Mon Apr 28 13:52:05 2014
 
 
     >> <                <
@@ -204,8 +204,8 @@
     >> UNTIL            until
     >> <IDENTIFIER>     number
     >> =                =
-    >> <no token>       
-  35: END.
+    >> <NUMBER> 	0 (integer)
+    >> =  35: END.
     >> END              end
     >> .                .
 

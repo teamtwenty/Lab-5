@@ -14,6 +14,6 @@ Real::Real() : Literal<double>(0.0)
 }
 void Real::print()
 {
-    cout << "   >> NUMBER>" << this->getLiteral() << " (real)\n";
+    printf("    >> <NUMBER>\t\t %f (real)\n", getLiteral());
 
 }

@@ -78,14 +78,11 @@ void Print::printToken(Token *token)
                 
                 //token = newInt;
                // sprintf(line, "    >> %-16s %d (integer)\n", symbol_string, token->getLiteral());
-                token = new Integer();
                 token->print();
-
             }
             else
             {
 //                sprintf(line, "    >> %-16s %g (real)\n", symbol_string, token->getRealLiteral());
-                token = new Real();
                 token->print();
             }
 //            intToken->print(line, symbol_string);
@@ -94,12 +91,11 @@ void Print::printToken(Token *token)
             break;
         case STRING:
 //            sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getStringLiteral().c_str());
-            token = new String();
             token->print();
             
             break;
         default:
-            sprintf(line, "    >> %-16s %-s\n", symbol_string, token->getTokenString().c_str());
+            sprintf(line, "    >> %-16s %-s \n", symbol_string, token->getTokenString().c_str());
             break;
     }
     printLine(line);
@@ -117,6 +113,7 @@ void Print::printTreeRecursive(Identifier *identifier)
         printTreeRecursive(identifier->getLeftChild());
     }
     sprintf(line, " %-16s %-s", identifier->getTokenString().c_str(), " ");
+    lineCount = 1;
     printLine(line);
     
     LineNumberList *list = identifier->getLineNumberList();

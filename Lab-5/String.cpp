@@ -14,5 +14,5 @@ String::String(): Literal<string>("")
 }
 void String::print()
 {
-    cout << "    >> <STRING>" << this->getLiteral() << "\n";
+    printf("    >> <STRING>\t\t %s\n", getLiteral().c_str());
 }

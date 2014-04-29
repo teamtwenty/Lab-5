@@ -112,11 +112,9 @@ Token* Scanner::getToken()
             
             break;
         case EOF_CODE:
-           // new_token = new Token();
             newToken->setCode(END_OF_FILE);
             break;
         default:
-            //newToken = new Token();
             getSpecial(token_string, token_ptr, newToken);
             break;
     }
@@ -209,7 +207,6 @@ void Scanner::getWord(char *str, char *token_ptr)
         newToken = new Identifier();
 
         newToken->setCode(IDENTIFIER);
-//      newToken->setTokenString(string(str));
 
     }
     
@@ -278,9 +275,7 @@ void Scanner::getNumber(char *str, char *token_ptr)
         //tok->setType(INTEGER_LIT);
         Integer *newInt = new Integer();
         newInt->setLiteral((int)atoi(str));
-        newToken = newInt;
-        Literal<Integer>((int)atoi(str));
-        
+        newToken = newInt;        
         
         //newInt = dynamic_cast<Integer*>(newToken);
         //newToken = newInt;
